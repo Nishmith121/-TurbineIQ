@@ -1,0 +1,6 @@
+"Domain","Title","Authors","Year","Journal/Conference","DOI/Link","Key_Takeaways"
+"Wind","A review of wind turbine condition monitoring and fault diagnosis","Teng et al.","2016","Energies","https://doi.org/10.3390/en9050353","Comprehensive overview of SCADA-based and vibration-based fault detection methods."
+"Wind","Deep learning for wind turbine condition monitoring using SCADA data","Zaher et al.","2019","Renewable Energy","https://doi.org/10.1016/j.renene.2018.11.015","Uses neural networks to predict gearbox failures before they happen."
+"Wind","Aerodynamic design and optimization of wind turbine blades","Schubel & Crossley","2012","Energies","https://doi.org/10.3390/en5093425","Review of blade profiles and aerodynamic efficiency modeling."
+"Wind","Wind turbine power curve modeling using advanced machine learning","Wang et al.","2018","Applied Energy","https://doi.org/10.1016/j.apenergy.2018.03.058","Comparison of SVM and Neural Networks for accurate power curve estimation."
+"Wind","Offshore wind turbine foundations: Analysis and design","Byrne & Houlsby","2015","Marine Structures","https://doi.org/10.1016/j.marstruc.2015.01.008","Analysis of monopile and jacket foundation structural integrity."
