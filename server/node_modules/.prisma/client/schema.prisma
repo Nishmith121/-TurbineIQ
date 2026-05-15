@@ -1,0 +1,232 @@
+// ============================================
+// Prisma Schema — TurbineIQ PostgreSQL Database
+// ============================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// =============================================
+// ENUMS
+// =============================================
+
+enum Role {
+  STUDENT
+  TEACHER
+}
+
+enum MachineType {
+  WIND_TURBINE
+  STEAM_TURBINE
+  GAS_TURBINE
+  HYDRO_TURBINE
+  MOTOR
+  GENERATOR
+  PUMP
+  COMPRESSOR
+}
+
+// =============================================
+// USER MODEL
+// =============================================
+
+model User {
+  id          String   @id @default(uuid())
+  email       String   @unique
+  password    String
+  name        String
+  role        Role     @default(STUDENT)
+  institution String?
+  department  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  projects    Project[]
+  teams       Team[]       @relation("TeamMembers")
+  taughtTeams Team[]       @relation("TeamTeacher")
+  assignments Assignment[]
+  submissions Submission[]
+
+  @@map("users")
+}
+
+// =============================================
+// PROJECT MODEL
+// =============================================
+
+model Project {
+  id          String      @id @default(uuid())
+  name        String
+  description String?
+  machineType MachineType
+  status      String      @default("active") // active, completed, archived
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  // Relations
+  userId      String
+  user        User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  trials      SimulationTrial[]
+  submissions Submission[]
+
+  @@map("projects")
+}
+
+// =============================================
+// SIMULATION TRIAL MODEL (Trial & Error)
+// =============================================
+
+model SimulationTrial {
+  id          String  @id @default(uuid())
+  trialNumber Int
+  trialName   String?
+
+  // Input parameters — stored as JSON for flexibility across machine types
+  // e.g., { bladeCount: 3, pitchAngle: 12, rotorDiameter: 80, windSpeed: 10 }
+  parameters Json
+
+  // Output results
+  efficiencyPercent Float?
+  powerOutput       Float?
+  specificResults   Json? // Machine-specific detailed results
+
+  notes     String?
+  createdAt DateTime @default(now())
+
+  // Relations
+  projectId String
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@map("simulation_trials")
+}
+
+// =============================================
+// MACHINE CATALOG (Manufacturers & Models)
+// =============================================
+
+model MachineCatalog {
+  id           String      @id @default(uuid())
+  machineType  MachineType
+  manufacturer String
+  modelName    String
+  type         String? // e.g., "Onshore Wind Turbine"
+  capacity     String? // e.g., "6.2 MW"
+  keyFeatures  String?
+
+  @@map("machine_catalog")
+}
+
+// =============================================
+// CAD MODELS (3D Model Links)
+// =============================================
+
+model CadModel {
+  id          String      @id @default(uuid())
+  machineType MachineType
+  component   String // e.g., "Horizontal Axis Wind Turbine"
+  platform    String // e.g., "GrabCAD"
+  fileFormat  String? // e.g., "STEP/IGES"
+  directLink  String
+
+  @@map("cad_models")
+}
+
+// =============================================
+// RESEARCH PAPERS
+// =============================================
+
+model ResearchPaper {
+  id           String  @id @default(uuid())
+  domain       String // e.g., "Wind", "Steam"
+  title        String
+  authors      String?
+  year         Int?
+  journal      String?
+  doiLink      String?
+  keyTakeaways String?
+
+  @@map("research_papers")
+}
+
+// =============================================
+// RESOURCE LINKS (Master Data Pack)
+// =============================================
+
+model ResourceLink {
+  id           String  @id @default(uuid())
+  machineType  String // Original type from CSV: "Wind", "Steam", etc.
+  resourceName String
+  directLink   String
+  fileType     String?
+  category     String? // Dataset, Manual, 3D Model, Research
+  priority     Int?
+  folder       String?
+  pgTable      String?
+  purpose      String?
+
+  @@map("resource_links")
+}
+
+// =============================================
+// LMS MODELS (Professor Portal)
+// =============================================
+
+model Team {
+  id        String   @id @default(uuid())
+  name      String
+  joinCode  String   @unique
+  teacherId String
+  createdAt DateTime @default(now())
+
+  teacher     User         @relation("TeamTeacher", fields: [teacherId], references: [id])
+  members     User[]       @relation("TeamMembers")
+  assignments Assignment[] @relation("TeamAssignments")
+
+  @@map("teams")
+}
+
+model Assignment {
+  id          String      @id @default(uuid())
+  title       String
+  description String
+  machineType MachineType
+  dueDate     DateTime?
+  teacherId   String
+  createdAt   DateTime    @default(now())
+
+  teacher     User         @relation(fields: [teacherId], references: [id])
+  teams       Team[]       @relation("TeamAssignments")
+  submissions Submission[]
+
+  @@map("assignments")
+}
+
+enum SubmissionStatus {
+  PENDING
+  GRADED
+}
+
+model Submission {
+  id           String           @id @default(uuid())
+  assignmentId String
+  studentId    String
+  projectId    String?
+  status       SubmissionStatus @default(PENDING)
+  score        Float?
+  feedback     String?
+  fileUrl      String?
+  submittedAt  DateTime         @default(now())
+  gradedAt     DateTime?
+
+  assignment Assignment @relation(fields: [assignmentId], references: [id])
+  student    User       @relation(fields: [studentId], references: [id])
+  project    Project?   @relation(fields: [projectId], references: [id])
+
+  @@map("submissions")
+}
