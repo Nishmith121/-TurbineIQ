@@ -1,0 +1,41 @@
+Machine Type,Resource Name,Direct Download Link,File Type,Category,Priority,Folder to Save,PostgreSQL Table,Purpose in TurbineIQ
+Wind,Wind Turbine SCADA Dataset (Kaggle),https://www.kaggle.com/datasets/berkerisen/wind-turbine-scada-dataset,CSV,Dataset,1,datasets/scada,wind_scada,AI & simulation
+Wind,Wind Turbine SCADA Fault Dataset,https://www.kaggle.com/datasets/azizjonkasimov/wind-turbine-scada-data-for-early-fault-detection,CSV,Dataset,1,datasets/ml,wind_faults,Fault prediction
+Wind,U.S. Wind Turbine Database,https://eerscmap.usgs.gov/uswtdb/,CSV/GeoJSON,Database,1,datasets/machine_specs,wind_turbines,Machine database
+Wind,Vestas Wind Turbines,https://www.vestas.com/en/products,PDF,Manual,2,manuals,manuals_metadata,Wind turbine specs
+Wind,Siemens Gamesa Offshore Turbines,https://www.siemensgamesa.com/en-int/products-and-services/offshore,PDF,Manual,2,manuals,manuals_metadata,Offshore turbine specs
+Wind,GE Haliade-X Data Sheet,https://www.ge.com/renewableenergy/wind-energy/offshore-wind/haliade-x-offshore-turbine,PDF,Manual,2,manuals,manuals_metadata,High capacity turbine specs
+Wind,NREL Wind Research,https://www.nrel.gov/wind/,CSV/API,Dataset,3,datasets/scada,wind_resources,Indian/Global wind resource mapping
+Wind,Global Wind Atlas,https://globalwindatlas.info/,TIFF/CSV,Dataset,3,datasets/scada,wind_resources,Wind speed and density maps
+Wind,Suzlon Wind Turbines,https://www.suzlon.com/in-en/energy-solutions,PDF,Manual,2,manuals,manuals_metadata,Indian turbine specs
+Wind,3D Wind Turbine Models (GrabCAD),https://grabcad.com/library?page=1&time=all_time&sort=recent&query=wind%20turbine,STEP,3D Model,3,cad,cad_models,Visualization
+Wind,Wind Turbine Blade Optimization (arXiv),https://arxiv.org/search/physics?query=wind+turbine+blade&searchtype=all,PDF,Research,3,research,research_papers,Blade design literature
+Wind,Urban Wind Turbine SCADA Dataset (Zenodo),https://zenodo.org/records/4429935,CSV,Dataset,3,datasets/sensor_data,sensor_readings,Minute-level SCADA data
+Steam,BHEL Steam Turbines,https://www.bhel.com/steam-turbines,PDF,Manual,2,manuals,manuals_metadata,Indian Steam turbine specs
+Steam,NASA C-MAPSS Engine Degradation Dataset,https://data.nasa.gov/Aerospace/CMAPSS-Jet-Engine-Simulated-Data/ff5v-kgg6,CSV,Dataset,3,datasets/ml,engine_degradation,Predictive maintenance for steam/gas turbines
+Steam,Steam Turbine Efficiency (MDPI),https://www.mdpi.com/search?q=steam+turbine+efficiency,PDF,Research,3,research,research_papers,Efficiency optimization research
+Steam,3D Steam Turbine Rotors (GrabCAD),https://grabcad.com/library?page=1&time=all_time&sort=recent&query=steam%20turbine%20rotor,STEP,3D Model,3,cad,cad_models,Rotor Visualization
+Gas,GE Gas Power Turbines Portfolio,https://www.ge.com/gas-power/products/gas-turbines,PDF,Manual,2,manuals,manuals_metadata,Gas turbine models
+Gas,Gas Turbine Performance Dataset (UCI),https://archive.ics.uci.edu/ml/datasets/Gas+Turbine+CO+and+NOx+Emission+Data+Set,CSV,Dataset,1,datasets/sensor_data,gas_emissions,Emissions prediction
+Gas,Siemens Gas Turbines,https://www.siemens-energy.com/global/en/offerings/power-generation/gas-turbines.html,PDF,Manual,2,manuals,manuals_metadata,Heavy duty gas turbine
+Gas,Gas Turbine Performance (Google Scholar),https://scholar.google.com/scholar?q=gas+turbine+performance,PDF,Research,3,research,research_papers,Performance literature
+Hydraulic,Francis Turbine CAD (GrabCAD),https://grabcad.com/library?page=1&time=all_time&sort=recent&query=francis%20turbine,STEP,3D Model,3,cad,cad_models,Francis turbine CAD
+Hydraulic,Pelton Turbine CFD Analysis (MDPI),https://www.mdpi.com/search?q=pelton+turbine+CFD,PDF,Research,3,research,research_papers,Hydro CFD literature
+Hydraulic,Voith Kaplan Turbines,https://voith.com/corp-en/turbines-generators/kaplan-turbines.html,PDF,Manual,2,manuals,manuals_metadata,Kaplan specs
+Hydraulic,BHEL Hydro Turbines,https://www.bhel.com/hydro-turbines,PDF,Manual,2,manuals,manuals_metadata,Indian hydro power specs
+Hydraulic,Hydropower Datasets (Kaggle),https://www.kaggle.com/datasets?search=hydropower,CSV,Dataset,3,datasets/scada,hydro_scada,Hydroelectric power generation data
+Motors,ABB Low Voltage AC Motors,https://new.abb.com/motors-generators/iec-low-voltage-motors,PDF,Manual,2,manuals,manuals_metadata,AC Motor Specs
+Motors,BLDC Motor CAD (GrabCAD),https://grabcad.com/library?page=1&time=all_time&sort=recent&query=bldc%20motor,STEP,3D Model,3,cad,cad_models,BLDC CAD model
+Motors,Electric Motor Temperature Dataset (Kaggle),https://www.kaggle.com/datasets/wkirgsn/electric-motor-temperature,CSV,Dataset,1,datasets/sensor_data,motor_temp,Temperature prediction
+Motors,Kirloskar Motors Product Catalogue,https://www.kirloskar-electric.com/ac-motors.html,PDF,Manual,2,manuals,manuals_metadata,Indian motor specs
+Motors,BLDC Motor Design Research (arXiv),https://arxiv.org/search/?query=BLDC+motor&searchtype=all,PDF,Research,3,research,research_papers,Motor optimization literature
+Generators,Generator Fault Datasets (Kaggle),https://www.kaggle.com/datasets?search=generator+fault,CSV,Dataset,2,datasets/ml,generator_faults,Fault prediction
+Generators,ABB Synchronous Generators,https://new.abb.com/motors-generators/synchronous-generators,PDF,Manual,2,manuals,manuals_metadata,Generator Specs
+Generators,Generator Fault Detection (Google Scholar),https://scholar.google.com/scholar?q=generator+fault+detection,PDF,Research,3,research,research_papers,Fault diagnostics literature
+Pumps,Kirloskar Brothers Pumps Catalogue,https://www.kirloskarpumps.com/products/,PDF,Manual,2,manuals,manuals_metadata,Indian pump specs
+Pumps,Centrifugal Pump Predictive Maintenance,https://www.kaggle.com/datasets/nphantawee/pump-sensor-data,CSV,Dataset,1,datasets/sensor_data,pump_sensors,Sensor anomaly detection
+Pumps,Centrifugal Pump 3D Models (GrabCAD),https://grabcad.com/library?page=1&time=all_time&sort=recent&query=centrifugal%20pump,STEP,3D Model,3,cad,cad_models,Pump CAD model
+Pumps,Pump Performance Analysis (MDPI),https://www.mdpi.com/search?q=centrifugal+pump+performance,PDF,Research,3,research,research_papers,Pump efficiency literature
+Compressors,Air Compressor Sensor Dataset,https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification,CSV,Dataset,1,datasets/ml,compressor_maintenance,Predictive Maintenance
+Compressors,Atlas Copco Compressors Manual,https://www.atlascopco.com/en-us/compressors,PDF,Manual,2,manuals,manuals_metadata,Compressor specs
+Compressors,Centrifugal Compressor CAD (GrabCAD),https://grabcad.com/library?page=1&time=all_time&sort=recent&query=centrifugal%20compressor,STEP,3D Model,3,cad,cad_models,Compressor CAD model
