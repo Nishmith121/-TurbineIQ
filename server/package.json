@@ -1,0 +1,40 @@
+{
+  "name": "turbineiq-server",
+  "version": "1.0.0",
+  "description": "TurbineIQ Backend — Node.js/Express with PostgreSQL and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "seed": "node seed/seedDatabase.js",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev --name init",
+    "prisma:studio": "npx prisma studio"
+  },
+  "keywords": [
+    "turbine",
+    "digital-twin",
+    "engineering",
+    "simulation"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@prisma/client": "^5.22.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "csv-parser": "^3.2.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "ml-regression": "^6.3.0",
+    "mongoose": "^9.7.4",
+    "multer": "^2.2.0",
+    "prisma": "^5.22.0"
+  },
+  "allowScripts": {
+    "prisma@5.22.0": true,
+    "@prisma/client@5.22.0": true,
+    "@prisma/engines@5.22.0": true
+  }
+}
