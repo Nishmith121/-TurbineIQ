@@ -1,0 +1,68 @@
+{
+  "name": "multivariateLinearRegression",
+  "weights": [
+    [
+      0.4029414180549793,
+      -0.02573093133923976
+    ],
+    [
+      6.179910209029913,
+      0.557417049567448
+    ],
+    [
+      5.184528646524996,
+      0.0042769040028360905
+    ],
+    [
+      -208.3301409482956,
+      7.8015895371790975
+    ]
+  ],
+  "inputs": 3,
+  "outputs": 2,
+  "intercept": true,
+  "summary": {
+    "regressionStatistics": {
+      "standardError": 1.8276563506026096,
+      "observations": 2
+    },
+    "variables": [
+      {
+        "label": "X Variable 1",
+        "coefficients": [
+          0.4029414180549793,
+          -0.02573093133923976
+        ],
+        "standardError": 1.6512419584123523,
+        "tStat": 0.24402324323347635
+      },
+      {
+        "label": "X Variable 2",
+        "coefficients": [
+          6.179910209029913,
+          0.557417049567448
+        ],
+        "standardError": 22.847990327971825,
+        "tStat": 0.2704793778498808
+      },
+      {
+        "label": "X Variable 3",
+        "coefficients": [
+          5.184528646524996,
+          0.0042769040028360905
+        ],
+        "standardError": 8.588642973307843,
+        "tStat": 0.603649338159439
+      },
+      {
+        "label": "Intercept",
+        "coefficients": [
+          -208.3301409482956,
+          7.8015895371790975
+        ],
+        "standardError": 666.6596770105143,
+        "tStat": -0.31249848780791023
+      }
+    ]
+  }
+}
