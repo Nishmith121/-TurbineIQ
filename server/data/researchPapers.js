@@ -1,0 +1,290 @@
+module.exports = {
+  "WIND_TURBINE": [
+    {
+      "id": "w1",
+      "title": "Aerodynamic Shape Optimization of Wind Turbine Blades using CFD",
+      "author": "MDPI Energies",
+      "summary": "Explores how Computational Fluid Dynamics is used to reshape blade airfoils to maximize the lift-to-drag ratio.",
+      "link": "https://www.mdpi.com/search?q=aerodynamic+shape+optimization+wind+turbine"
+    },
+    {
+      "id": "w2",
+      "title": "Deep Reinforcement Learning for Wind Turbine Pitch Control",
+      "author": "ScienceDirect",
+      "summary": "Discusses how AI and reinforcement learning are replacing traditional PID controllers to maximize Betz Limit efficiency.",
+      "link": "https://www.sciencedirect.com/search?qs=deep%20reinforcement%20learning%20wind%20turbine%20pitch%20control"
+    },
+    {
+      "id": "w3",
+      "title": "Wake Effect Mitigation in Large Wind Farms",
+      "author": "Renewable Energy Journal",
+      "summary": "Analyzes the velocity deficits caused by upstream turbines and how yaw-misalignment can increase overall farm power output.",
+      "link": "https://scholar.google.com/scholar?q=Wake+Effect+Mitigation+in+Large+Wind+Farms"
+    },
+    {
+      "id": "w4",
+      "title": "Aeroelastic Analysis of Large-Scale Flexible Blades",
+      "author": "IEEE Xplore",
+      "summary": "Studies the structural deformation of 100m+ wind turbine blades under heavy wind loads and its impact on power coefficients.",
+      "link": "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Aeroelastic%20Analysis%20of%20Large-Scale%20Flexible%20Blades"
+    },
+    {
+      "id": "w5",
+      "title": "Blade Element Momentum (BEM) Theory Validation",
+      "author": "MDPI Applied Sciences",
+      "summary": "A comprehensive review comparing BEM theoretical models against real-world wind tunnel experimental data.",
+      "link": "https://www.mdpi.com/search?q=Blade+Element+Momentum+Theory"
+    },
+    {
+      "id": "w6",
+      "title": "Leading Edge Erosion impact on Aerodynamic Efficiency",
+      "author": "Wind Energy Science",
+      "summary": "Investigates how rain and dust erosion on the blade leading edge drastically reduces the power coefficient.",
+      "link": "https://scholar.google.com/scholar?q=Leading+Edge+Erosion+impact+on+Aerodynamic+Efficiency"
+    },
+    {
+      "id": "w7",
+      "title": "Offshore Wind Turbine Foundation Dynamics",
+      "author": "Ocean Engineering",
+      "summary": "Examines the structural resonance and wave load impacts on monopile foundations for offshore wind turbines.",
+      "link": "https://www.sciencedirect.com/search?qs=Offshore%20Wind%20Turbine%20Foundation%20Dynamics"
+    },
+    {
+      "id": "w8",
+      "title": "Direct Drive vs Gearbox Drivetrain Efficiency",
+      "author": "MDPI Machines",
+      "summary": "A comparative study of the mechanical losses in traditional gearboxes versus modern permanent magnet direct-drive generators.",
+      "link": "https://www.mdpi.com/search?q=Direct+Drive+vs+Gearbox+Drivetrain+Efficiency"
+    },
+    {
+      "id": "w9",
+      "title": "Tip Speed Ratio (TSR) Tracking Algorithms",
+      "author": "IEEE Transactions on Energy Conversion",
+      "summary": "Details Maximum Power Point Tracking (MPPT) algorithms that dynamically adjust rotor speed to maintain optimal TSR.",
+      "link": "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Tip%20Speed%20Ratio%20Tracking%20Algorithms"
+    },
+    {
+      "id": "w10",
+      "title": "Vertical Axis Wind Turbine (VAWT) Morphing Blades",
+      "author": "Nature Energy",
+      "summary": "Research on biomimetic blades that change shape dynamically to solve the inherent low-efficiency problems of VAWTs.",
+      "link": "https://scholar.google.com/scholar?q=Vertical+Axis+Wind+Turbine+Morphing+Blades"
+    }
+  ],
+  "STEAM_TURBINE": [
+    {
+      "id": "s1",
+      "title": "Rankine Cycle Thermal Efficiency Optimization",
+      "author": "ScienceDirect",
+      "summary": "Explores superheating, reheating, and regeneration techniques to push the thermal efficiency of steam turbines beyond 45%.",
+      "link": "https://www.sciencedirect.com/search?qs=Rankine%20Cycle%20Thermal%20Efficiency%20Optimization"
+    },
+    {
+      "id": "s2",
+      "title": "Multi-Stage Pressure Drop Aerodynamics",
+      "author": "MDPI Energies",
+      "summary": "Analyzes the flow dynamics across high, intermediate, and low-pressure turbine stages to minimize aerodynamic losses.",
+      "link": "https://www.mdpi.com/search?q=steam+turbine+multi-stage+pressure+drop"
+    },
+    {
+      "id": "s3",
+      "title": "Condenser Vacuum Maximization Techniques",
+      "author": "Applied Thermal Engineering",
+      "summary": "Studies how decreasing condenser pressure exponentially improves steam turbine power output and the limits of cooling water.",
+      "link": "https://scholar.google.com/scholar?q=Condenser+Vacuum+Maximization+steam+turbine"
+    },
+    {
+      "id": "s4",
+      "title": "Water Droplet Erosion in Low-Pressure Stages",
+      "author": "Wear Journal",
+      "summary": "Investigates the destructive impact of condensation droplets hitting turbine blades at supersonic speeds in the final stages.",
+      "link": "https://www.sciencedirect.com/search?qs=Water%20Droplet%20Erosion%20steam%20turbine"
+    },
+    {
+      "id": "s5",
+      "title": "Supercritical and Ultra-Supercritical Steam Conditions",
+      "author": "IEEE Xplore",
+      "summary": "Research on operating steam turbines above the critical point of water (374°C, 22 MPa) to achieve massive efficiency gains.",
+      "link": "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Ultra-Supercritical%20Steam%20Turbine"
+    },
+    {
+      "id": "s6",
+      "title": "Labyrinth Seal Leakage Reduction",
+      "author": "Journal of Turbomachinery",
+      "summary": "CFD analysis of labyrinth seal geometries to minimize steam leakage bypass, improving volumetric efficiency.",
+      "link": "https://scholar.google.com/scholar?q=Labyrinth+Seal+Leakage+Reduction+steam+turbine"
+    },
+    {
+      "id": "s7",
+      "title": "Thermal Stress and Fatigue during Startup",
+      "author": "International Journal of Fatigue",
+      "summary": "Examines the extreme thermal gradients experienced by thick turbine casings during cold starts and warm-up procedures.",
+      "link": "https://www.sciencedirect.com/search?qs=Thermal%20Stress%20steam%20turbine%20startup"
+    },
+    {
+      "id": "s8",
+      "title": "Combined Cycle Gas-Steam Plant Synergy",
+      "author": "MDPI Sustainability",
+      "summary": "Details how Waste Heat Recovery Steam Generators (HRSG) couple with gas turbines to achieve 60%+ overall plant efficiency.",
+      "link": "https://www.mdpi.com/search?q=Combined+Cycle+Gas-Steam+Plant"
+    },
+    {
+      "id": "s9",
+      "title": "Blade Vibration and Resonance Tuning",
+      "author": "Journal of Sound and Vibration",
+      "summary": "Studies the natural frequencies of long low-pressure blades to avoid catastrophic resonance failures at synchronous speeds.",
+      "link": "https://scholar.google.com/scholar?q=steam+turbine+Blade+Vibration+and+Resonance"
+    },
+    {
+      "id": "s10",
+      "title": "Advanced Coating Materials for High-Temp Rotors",
+      "author": "Surface and Coatings Technology",
+      "summary": "Research on thermal barrier coatings (TBCs) that allow turbine rotors to withstand temperatures exceeding steel metallurgical limits.",
+      "link": "https://www.sciencedirect.com/search?qs=thermal%20barrier%20coatings%20steam%20turbine"
+    }
+  ],
+  "GAS_TURBINE": [
+    {
+      "id": "g1",
+      "title": "Brayton Cycle Thermodynamic Optimization",
+      "author": "ScienceDirect",
+      "summary": "A deep dive into the core thermodynamics of gas turbines, focusing on pressure ratio vs. firing temperature trade-offs.",
+      "link": "https://www.sciencedirect.com/search?qs=Brayton%20Cycle%20Thermodynamic%20Optimization"
+    },
+    {
+      "id": "g2",
+      "title": "Compressor Stall and Surge Margin Prediction",
+      "author": "ASME Journal of Turbomachinery",
+      "summary": "Investigates the aerodynamic instability of axial compressors at low mass flow rates and how variable inlet guide vanes mitigate it.",
+      "link": "https://scholar.google.com/scholar?q=Compressor+Stall+and+Surge+Margin+Prediction"
+    },
+    {
+      "id": "g3",
+      "title": "Film Cooling Aerodynamics in High-Pressure Turbines",
+      "author": "International Journal of Heat and Mass Transfer",
+      "summary": "CFD analysis of cooling hole geometries that bleed compressor air over turbine blades to protect them from 1500°C+ combustion gases.",
+      "link": "https://www.sciencedirect.com/search?qs=Film%20Cooling%20Aerodynamics%20gas%20turbine"
+    },
+    {
+      "id": "g4",
+      "title": "Dry Low NOx (DLN) Combustion Stability",
+      "author": "Combustion and Flame",
+      "summary": "Research on lean-premixed combustion dynamics to drastically reduce NOx emissions without causing thermoacoustic instability (humming).",
+      "link": "https://scholar.google.com/scholar?q=Dry+Low+NOx+Combustion+Stability"
+    },
+    {
+      "id": "g5",
+      "title": "Thermal Barrier Coatings (TBC) Degradation",
+      "author": "MDPI Materials",
+      "summary": "Studies the spallation and sintering degradation of yttria-stabilized zirconia coatings under extreme cyclic thermal loads.",
+      "link": "https://www.mdpi.com/search?q=Thermal+Barrier+Coatings+gas+turbine"
+    },
+    {
+      "id": "g6",
+      "title": "Hydrogen Blending in Gas Turbine Combustors",
+      "author": "International Journal of Hydrogen Energy",
+      "summary": "Analyzes the flashback and flame speed challenges of blending 20-100% green hydrogen into natural gas fuel streams.",
+      "link": "https://www.sciencedirect.com/search?qs=Hydrogen%20Blending%20Gas%20Turbine"
+    },
+    {
+      "id": "g7",
+      "title": "Micro Gas Turbines for Distributed Generation",
+      "author": "Applied Energy",
+      "summary": "Examines the aerodynamic scaling laws and recuperator efficiency challenges in sub-100kW radial micro gas turbines.",
+      "link": "https://scholar.google.com/scholar?q=Micro+Gas+Turbines+for+Distributed+Generation"
+    },
+    {
+      "id": "g8",
+      "title": "Tip Clearance Leakage Flow Mechanisms",
+      "author": "Journal of Fluid Mechanics",
+      "summary": "Detailed study of the vortex structures created by high-pressure gas leaking over the un-shrouded blade tips.",
+      "link": "https://www.sciencedirect.com/search?qs=Tip%20Clearance%20Leakage%20Flow%20gas%20turbine"
+    },
+    {
+      "id": "g9",
+      "title": "Aero-Engine vs. Heavy Duty Industrial Turbines",
+      "author": "IEEE Access",
+      "summary": "A comparative analysis of the design philosophies, weight-to-power ratios, and maintenance cycles of aeroderivatives vs heavy-frame turbines.",
+      "link": "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=aeroderivative%20gas%20turbine"
+    },
+    {
+      "id": "g10",
+      "title": "Machine Learning for Predictive Maintenance",
+      "author": "MDPI Sensors",
+      "summary": "How neural networks analyze SCADA vibration and temperature data to predict bearing and blade failures months in advance.",
+      "link": "https://www.mdpi.com/search?q=Machine+Learning+Predictive+Maintenance+gas+turbine"
+    }
+  ],
+  "HYDRO_TURBINE": [
+    {
+      "id": "h1",
+      "title": "Cavitation Mitigation in Francis Turbines",
+      "author": "ScienceDirect",
+      "summary": "Explores the formation of vapor bubbles in low-pressure zones and the severe pitting damage they cause upon implosion.",
+      "link": "https://www.sciencedirect.com/search?qs=Cavitation%20Mitigation%20Francis%20Turbines"
+    },
+    {
+      "id": "h2",
+      "title": "Guide Vane Optimization for Variable Head",
+      "author": "Renewable Energy",
+      "summary": "CFD analysis of wicket gate angles to maintain high hydraulic efficiency across severe seasonal water head fluctuations.",
+      "link": "https://scholar.google.com/scholar?q=Guide+Vane+Optimization+Hydro+Turbine"
+    },
+    {
+      "id": "h3",
+      "title": "Pelton Wheel Bucket Aerodynamics",
+      "author": "MDPI Water",
+      "summary": "Investigates the complex interaction of high-velocity water jets striking the splitter ridge of Pelton wheel buckets.",
+      "link": "https://www.mdpi.com/search?q=Pelton+Wheel+Bucket+Aerodynamics"
+    },
+    {
+      "id": "h4",
+      "title": "Draft Tube Vortex Rope Instabilities",
+      "author": "Journal of Hydraulic Research",
+      "summary": "Studies the swirling flow exiting the runner at part-load operation, causing severe low-frequency pressure pulsations.",
+      "link": "https://www.sciencedirect.com/search?qs=Draft%20Tube%20Vortex%20Rope"
+    },
+    {
+      "id": "h5",
+      "title": "Pumped Storage Hydroelectricity Transients",
+      "author": "IEEE Transactions on Power Systems",
+      "summary": "Analyzes the hydraulic shock (water hammer) and electrical grid dynamics during rapid switching from pumping to generating modes.",
+      "link": "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Pumped%20Storage%20Hydroelectricity"
+    },
+    {
+      "id": "h6",
+      "title": "Kaplan Turbine Blade Pitch Control Algorithms",
+      "author": "Control Engineering Practice",
+      "summary": "Research on dual-regulated optimization, linking guide vane opening with runner blade pitch for maximum flat-curve efficiency.",
+      "link": "https://scholar.google.com/scholar?q=Kaplan+Turbine+Blade+Pitch+Control"
+    },
+    {
+      "id": "h7",
+      "title": "Sediment Erosion in Run-of-River Turbines",
+      "author": "Wear Journal",
+      "summary": "Investigates abrasive wear caused by silt and quartz particles in Himalayan and Andean run-of-river hydro projects.",
+      "link": "https://www.sciencedirect.com/search?qs=Sediment%20Erosion%20Hydro%20Turbine"
+    },
+    {
+      "id": "h8",
+      "title": "Fish-Friendly Hydro Turbine Designs",
+      "author": "Ecological Engineering",
+      "summary": "Reviews minimum-gap runner designs and blunt leading edges intended to reduce fish mortality rates in low-head dams.",
+      "link": "https://scholar.google.com/scholar?q=Fish-Friendly+Hydro+Turbine"
+    },
+    {
+      "id": "h9",
+      "title": "Micro-Hydro Cross-Flow (Banki) Turbines",
+      "author": "MDPI Energies",
+      "summary": "Optimization of nozzle geometry and runner blades for ultra-low-cost rural electrification projects in developing nations.",
+      "link": "https://www.mdpi.com/search?q=Micro-Hydro+Cross-Flow+Turbine"
+    },
+    {
+      "id": "h10",
+      "title": "Digital Twin Modeling of Hydro Plants",
+      "author": "Applied Sciences",
+      "summary": "Using real-time SCADA sensor data to create a synchronized virtual model of the penstock, runner, and generator for fault diagnosis.",
+      "link": "https://www.mdpi.com/search?q=Digital+Twin+Hydro+Power"
+    }
+  ]
+};
